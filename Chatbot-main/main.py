@@ -1,4 +1,4 @@
-from langchain.chat_models import ChatOpenAI
+from chain.chat_models import ChatOpenAI
 from langchain.chains import ConversationChain
 from langchain.chains.conversation.memory import ConversationBufferWindowMemory
 from langchain.prompts import (
@@ -9,7 +9,8 @@ from langchain.prompts import (
 )
 import streamlit as st
 from streamlit_chat import message
-from utils import *
+from utils import *  
+
 
 st.subheader("Chatbot with Langchain!")
 
